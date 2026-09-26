@@ -2,7 +2,7 @@
 -- Change Over Years
 SELECT 
 	YEAR(order_date) as order_year,
-	SUM(sales_amount),
+	SUM(sales_amount) as total_sales,
 	COUNT(DISTINCT customer_key) AS total_customer,
 	SUM(quantity) as total_quantity
 FROM gold.fact_sales 
