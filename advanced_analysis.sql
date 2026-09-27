@@ -1,4 +1,4 @@
-/*
+
 -- Change Over Years
 SELECT 
 	YEAR(order_date) as order_year,
@@ -128,13 +128,13 @@ FROM product_segments
 GROUP BY cost_range 
 ORDER BY total_products DESC
 
-*/
+
 
 /* Group cutomers into three segments based on their spending behavior:
   -VIP: Customers with at least 12 months of history and spending more than 5,000.
   -Regular: Customers with at least 12 months of history and spending 5,000 or less.
   -New: Customers with a lifespan of less than 12 months.
-And find the total nimber of coustomers by each group
+And find the total nimber of coustomers by each group */
 
 
 WITH customer_spending AS
@@ -166,7 +166,7 @@ FROM customer_spending )t
 GROUP BY customer_category
 ORDER BY total_customers DESC
 
-*/
+
 
 /*
 ======================================================================
@@ -263,7 +263,7 @@ CASE WHEN lifespan = 0 THEN 0
 END as avg_monthly_spend
 FROM customer_aggregation
 
-*/
+
 
 /*
 ======================================================================
