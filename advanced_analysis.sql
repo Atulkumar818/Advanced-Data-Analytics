@@ -188,8 +188,8 @@ Highlights:
 		- recency (months since last orders)
 		- average value
 		- average monthly spend
-===============================================================
-CREATE VIEW gold.report_customers AS 
+===============================================================*/
+--CREATE VIEW gold.report_customers AS 
 WITH base_query AS (
 /* ------------------------------------------------------------
 1) Base Query: Retrieves core columns from tables
