@@ -189,7 +189,7 @@ Highlights:
 		- average value
 		- average monthly spend
 ===============================================================*/
---CREATE VIEW gold.report_customers AS 
+CREATE VIEW gold.report_customers AS 
 WITH base_query AS (
 /* ------------------------------------------------------------
 1) Base Query: Retrieves core columns from tables
@@ -288,7 +288,7 @@ Highlights:
 ===============================================================
 */
 
---CREATE VIEW gold.report_products AS 
+CREATE VIEW gold.report_products AS 
 WITH base_query AS (
 /* ------------------------------------------------------------
 1) Base Query: Retrieves core columns from tables
